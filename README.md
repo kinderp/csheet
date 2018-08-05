@@ -93,7 +93,8 @@ Per una definizione della terminologia usate in questo contensto (per esemio, re
 zypper [--global-options] COMMAND  [--command-options] [arguments]
 ```
 
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+First Header | Second Header | Second Header 
+------------ | ------------- | -------------
+Zypper Commands| CThe simplest way to execute Zypper is to type its name, followed by a command. For example, to apply all needed patches to the system|     sudo zypper patch
+Global Options | Additionally, you can choose from one or more global options by typing them immediately before the command. the option --non-interactive means that the command is run without asking anything (automatically applying the default answers).  | sudo zypper --non-interactive patch
+
