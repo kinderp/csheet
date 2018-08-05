@@ -180,3 +180,7 @@ Header | Comments | Command
 | |To verify whether all dependencies are still fulfilled and to repair missing dependencies, use| `zypper verify`
 | |In addition to dependencies that must be fulfilled, some packages “recommend” other packages. These recommended packages are only installed if actually available and installable. In case recommended packages were made available after the recommending package has been installed (by adding additional packages or hardware), use the following command. This command is very useful after plugging in a Web cam or Wi-Fi device. It will install drivers for the device and related software, if available. Drivers and related software are only installable if certain hardware dependencies are fulfilled| `sudo zypper install-new-recommends`
 
+#### Updating Software with Zypper [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.softup)
+
+There are three different ways to update software using Zypper: by installing patches, by installing a new version of a package or by updating the entire distribution. The latter is achieved with zypper dist-upgrade. Upgrading openSUSE Leap is discussed in Book “Start-Up”, [Chapter 13 “Upgrading the System and System Changes”](https://doc.opensuse.org/documentation/leap/startup/single-html/book.opensuse.startup/index.html#cha.update.osuse). 
+
