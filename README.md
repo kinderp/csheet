@@ -173,4 +173,10 @@ Header | Comments | Command
 | | Normally you can only install or refresh packages from enabled repositories. The `--plus-content` TAG option helps you specify repositories to be refreshed, temporarily enabled during the current Zypper session, and disabled after it completes.For example, to enable repositories that may provide additional `-debuginfo` or `-debugsource` packages, use `--plus-content debug`. You can specify this option multiple times. To temporarily enable such 'debug' repositories to install a specific `-debuginfo` package, use the option as follows | `sudo zypper --plus-content debug install "debuginfo(build-id)=eb844a5c20c70a59fc693cd1061f851fb7d046f4"`
    
  
+#### Utilities [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.softman.util)
+
+Header | Comments | Command 
+------------ | ------------- | -------------
+| |To verify whether all dependencies are still fulfilled and to repair missing dependencies, use| `zypper verify`
+| |In addition to dependencies that must be fulfilled, some packages “recommend” other packages. These recommended packages are only installed if actually available and installable. In case recommended packages were made available after the recommending package has been installed (by adding additional packages or hardware), use the following command. This command is very useful after plugging in a Web cam or Wi-Fi device. It will install drivers for the device and related software, if available. Drivers and related software are only installable if certain hardware dependencies are fulfilled| `sudo zypper install-new-recommends`
 
