@@ -211,6 +211,8 @@ Header | Comments | Command
 | | A list of all new installable packages can be obtained with the command [1](https://github.com/kinderp/csheet/blob/master/README.md#installing-new-package-versions_1) | `zypper list-updates`
 
 # Notes
+ 
+ 
 ###### Installing-New-Package-Versions_1
  
  Note that this command only lists packages that match the following criteria
