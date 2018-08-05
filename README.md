@@ -170,9 +170,7 @@ Header | Comments | Command
 
 Header | Comments | Command 
 ------------ | ------------- | -------------
-| | Normally you can only install or refresh packages from enabled repositories. The `--plus-content` TAG option helps you specify repositories to be refreshed, temporarily enabled during the current Zypper session, and disabled after it completes.
-For example, to enable repositories that may provide additional `-debuginfo` or `-debugsource` packages, use `--plus-content debug`. You can specify this option multiple times. To temporarily enable such 'debug' repositories to install a specific `-debuginfo` package, use the option as follows | `sudo zypper --plus-content debug \
-   install "debuginfo(build-id)=eb844a5c20c70a59fc693cd1061f851fb7d046f4"`
+| | Normally you can only install or refresh packages from enabled repositories. The `--plus-content` TAG option helps you specify repositories to be refreshed, temporarily enabled during the current Zypper session, and disabled after it completes.For example, to enable repositories that may provide additional `-debuginfo` or `-debugsource` packages, use `--plus-content debug`. You can specify this option multiple times. To temporarily enable such 'debug' repositories to install a specific `-debuginfo` package, use the option as follows | `sudo zypper --plus-content debug install "debuginfo(build-id)=eb844a5c20c70a59fc693cd1061f851fb7d046f4"`
    
  
 
