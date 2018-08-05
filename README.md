@@ -1,10 +1,10 @@
 # csheet
 
-# OpenSuse
+# OpenSUSE
 
 ## Yast
 
-### Definition of Terms
+### Definition of Terms [origin](https://doc.opensuse.org/documentation/leap/startup/single-html/book.opensuse.startup/index.html#sec.onlineupdate.terms)
 
 I termini seguenti sono importanti per comprendere l'installazione e la rimozione del software in OpenSUSE LEAP
 > The following terms are important for understanding installing and removing software in openSUSE Leap.
