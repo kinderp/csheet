@@ -208,8 +208,15 @@ Header | Comments | Command
 | | If a repository contains only new packages, but does not provide patches, zypper patch does not show any effect. To update all installed packages with newer available versions (while maintaining system integrity), use| `sudo zypper update`
 | | To update individual packages, specify the package with either the update or install command | `sudo zypper update PACKAGE_NAME`
 | | | `sudo zypper install PACKAGE_NAME`
-| | A list of all new installable packages can be obtained with the command | `zypper list-updates`
+| | A list of all new installable packages can be obtained with the command [1]() | `zypper list-updates`
 
-[^1] 
+Notes
+###### Installing-New-Package-Versions_1
+ Note that this command only lists packages that match the following criteria:
 
-[^1]: Here is the footnote.
+    has the same vendor like the already installed package,
+
+    is provided by repositories with at least the same priority than the already installed package,
+
+    is installable (all dependencies are satisfied). 
+
