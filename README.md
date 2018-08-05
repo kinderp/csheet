@@ -86,3 +86,14 @@ Per una definizione della terminologia usate in questo contensto (per esemio, re
 >    This chapter describes Zypper and RPM, two command line tools for managing software. 
 >    For a definition of the terminology used in this context (for example, repository, patch, or update) refer to Book “Start-Up”, Chapter 10 “Installing or Removing Software”, Section 10.1 “Definition of Terms”. 
 
+
+## Zypper
+
+```
+zypper [--global-options] COMMAND  [--command-options] [arguments]
+```
+
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
