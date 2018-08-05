@@ -224,7 +224,7 @@ TODO!
 #### Managing Repositories with Zypper [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.instrepo)
 
 | | All installation or patch commands of Zypper rely on a list of known repositories. To list all repositories known to the system, use the command | `zypper repos`
-| | By default, details such as the URI or the priority of the repository are not displayed. Use the following command to list all details [1]() | `zypper repos -d`
+| | By default, details such as the URI or the priority of the repository are not displayed. Use the following command to list all details [1](https://github.com/kinderp/csheet/blob/master/README.md#managing-repositories-with-zypper_1) | `zypper repos -d`
 
 
 # Notes
@@ -239,5 +239,15 @@ TODO!
 * is installable (all dependencies are satisfied). 
 
 ###### Managing-Repositories-with-Zypper_1
-
+The result will look similar to the following output
+```
+zypper repos
+#  | Alias                 | Name             | Enabled | GPG Check | Refresh
+---+-----------------------+------------------+---------+-----------+--------
+ 1 | Leap-42.3-Main        | Main (OSS)       | Yes     | (r ) Yes  | Yes
+ 2 | Leap-42.3-Update      | Update (OSS)     | Yes     | (r ) Yes  | Yes
+ 3 | Leap-42.3-NOSS        | Main (NON-OSS)   | Yes     | (r ) Yes  | Yes
+ 4 | Leap-42.3-Update-NOSS | Update (NON-OSS) | Yes     | (r ) Yes  | Yes
+[...]
+```
 When specifying repositories in various commands, an alias, URI or repository number from the zypper repos command output can be used. A repository alias is a short version of the repository name for use in repository handling commands. Note that the repository numbers can change after modifying the list of repositories. The alias will never change by itself
