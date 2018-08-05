@@ -93,7 +93,7 @@ Per una definizione della terminologia usate in questo contensto (per esemio, re
 zypper [--global-options] COMMAND  [--command-options] [arguments]
 ```
 
-First Header | Second Header | Second Header 
+Header | Comments | Command 
 ------------ | ------------- | -------------
 Zypper Commands| CThe simplest way to execute Zypper is to type its name, followed by a command. For example, to apply all needed patches to the system|     sudo zypper patch
 Global Options | Additionally, you can choose from one or more global options by typing them immediately before the command. the option --non-interactive means that the command is run without asking anything (automatically applying the default answers).  | sudo zypper --non-interactive patch
@@ -101,3 +101,22 @@ Command-Specific Options | To use options that are specific to a particular comm
 Arguments | Some commands require one or more arguments. For example, when using the command install, you need to specify which package or which packages you want to install | sudo zypper install mplayer
 Arguments | Some options also require a single argument. The following command will list all known patterns | zypper search -t pattern 
 
+
+#### Installing and Removing Software with Zypper [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.softman)
+
+Header | Comments | Command 
+------------ | ------------- | -------------
+ | To install | sudo zypper install PACKAGE_NAME
+ | To remove | sudo zypper remove PACKAGE_NAME
+ 
+ #### Selecting Which Packages to Install or Remove [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.selectpackage)
+ 
+There are various ways to address packages with the commands zypper install and zypper remove
+
+Header | Comments | Command 
+------------ | ------------- | -------------
+By Exact Package Name | | sudo zypper install MozillaFirefox
+By Exact Package Name and Version Number | | sudo zypper install MozillaFirefox-52.2
+By Repository Alias and Package Name | | sudo zypper install mozilla:MozillaFirefox
+By Package Name Using Wild Cards | You can select all packages that have names starting or ending with a certain string. Use wild cards with care, especially when removing packages. The following command will install all packages starting with “Moz”:| sudo zypper install 'Moz*'
+Removing all -debuginfo Packages | When debugging a problem, you sometimes need to temporarily install a lot of -debuginfo packages which give you more information about running processes. After your debugging session finishes and you need to clean the environment, run the following | sudo zypper remove '*-debuginfo'
