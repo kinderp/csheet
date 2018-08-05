@@ -209,6 +209,23 @@ Header | Comments | Command
 | | To update individual packages, specify the package with either the update or install command | `sudo zypper update PACKAGE_NAME`
 | | | `sudo zypper install PACKAGE_NAME`
 | | A list of all new installable packages can be obtained with the command [1](https://github.com/kinderp/csheet/blob/master/README.md#installing-new-package-versions_1) | `zypper list-updates`
+| | A list of all new available packages (regardless whether installable or not) can be obtained with. To find out why a new package cannot be installed, use the zypper install or zypper update command.| `sudo zypper list-updates --all`
+
+#### Identifying Orphaned Packages [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.softup.orphaned)
+
+Header | Comments | Command 
+------------ | ------------- | -------------
+| | Whenever you remove a repository from Zypper or upgrade your system, some packages can get in an “orphaned” state. These orphaned packages belong to no active repository anymore. The following command gives you a list of these. With this list, you can decide if a package is still needed or can be removed safely | `sudo zypper packages --orphaned` |
+
+#### dentifying Processes and Services Using Deleted Files [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.ps)
+
+TODO!
+
+#### Managing Repositories with Zypper [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.instrepo)
+
+| | All installation or patch commands of Zypper rely on a list of known repositories. To list all repositories known to the system, use the command | `zypper repos`
+| | By default, details such as the URI or the priority of the repository are not displayed. Use the following command to list all details [1]() | `zypper repos -d`
+
 
 # Notes
  
@@ -221,3 +238,6 @@ Header | Comments | Command
 * is provided by repositories with at least the same priority than the already installed package,
 * is installable (all dependencies are satisfied). 
 
+###### Managing-Repositories-with-Zypper_1
+
+When specifying repositories in various commands, an alias, URI or repository number from the zypper repos command output can be used. A repository alias is a short version of the repository name for use in repository handling commands. Note that the repository numbers can change after modifying the list of repositories. The alias will never change by itself
