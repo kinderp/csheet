@@ -97,8 +97,8 @@ zypper [--global-options] COMMAND  [--command-options] [arguments]
 Header | Comments | Command 
 ------------ | ------------- | -------------
 Zypper Commands| The simplest way to execute Zypper is to type its name, followed by a command. For example, to apply all needed patches to the system|     `sudo zypper patch`
-Global Options | Additionally, you can choose from one or more global options by typing them immediately before the command. the option --non-interactive means that the command is run without asking anything (automatically applying the default answers).  | `sudo zypper --non-interactive patch`
-Command-Specific Options | To use options that are specific to a particular command, type them immediately after the command. --auto-agree-with-licenses is used to apply all needed patches to a system without you being asked to confirm any licenses. Instead, license will be accepted automatically | `sudo zypper patch --auto-agree-with-licenses`
+Global Options | Additionally, you can choose from one or more global options by typing them immediately before the command. the option `--non-interactive` means that the command is run without asking anything (automatically applying the default answers).  | `sudo zypper --non-interactive patch`
+Command-Specific Options | To use options that are specific to a particular command, type them immediately after the command. `--auto-agree-with-licenses` is used to apply all needed patches to a system without you being asked to confirm any licenses. Instead, license will be accepted automatically | `sudo zypper patch --auto-agree-with-licenses`
 Arguments | Some commands require one or more arguments. For example, when using the command install, you need to specify which package or which packages you want to install | `sudo zypper install mplayer`
 Arguments | Some options also require a single argument. The following command will list all known patterns | `zypper search -t pattern`
 
