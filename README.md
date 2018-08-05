@@ -194,5 +194,4 @@ Header | Comments | Command
 | | To install all patches relating to a specific Bugzilla issue | `sudo zypper patch --bugzilla=NUMBER`
 | | To install all patches relating to a specific CVE database entry | `sudo zypper patch --cve=NUMBER`
 | ex.| Install a security patch with the CVE number CVE-2010-2713 | `sudo zypper patch --cve=CVE-2010-2713`
-| ex.| To install only patches which affect Zypper and the package management itself.  Bear in mind that other command options that would also update other repositories will be dropped if you use the updatestack-only command option.
-| `sudo zypper patch --updatestack-only`
+| ex.| To install only patches which affect Zypper and the package management itself.Bear in mind that other command options that would also update other repositories will be dropped if you use the updatestack-only command option.| `sudo zypper patch --updatestack-only`
