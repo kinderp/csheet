@@ -126,3 +126,11 @@ By Capability, Hardware Architecture, or Version |  Together with a capability, 
  | Versions must be appended to the end of the string and must be preceded by an operator: < (lesser than), <= (lesser than or equal), = (equal), >= (greater than or equal), > (greater than).| sudo zypper install 'firefox>=52.2'
  | You can also combine a hardware architecture and version requirement | udo zypper install 'firefox.x86_64>=52.2'
 By Path to the RPM file | You can also specify a local or remote path to a package | sudo zypper install /tmp/install/MozillaFirefox.rpm | sudo zypper install http://download.example.com/MozillaFirefox.rpm
+
+#### Combining Installation and Removal of Packages [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.combineinstall)
+
+Header | Comments | Command 
+------------ | ------------- | -------------
+| | To install and remove packages simultaneously, use the +/- modifiers. To install emacs and simultaneously remove vim , use | sudo zypper install emacs -vim
+| | To remove emacs and simultaneously install vim , use | sudo zypper remove emacs +vim
+| | To prevent the package name starting with the - being interpreted as a command option, always use it as the second argument. If this is not possible, precede it with -- | sudo zypper install -emacs +vim       # Wrong sudo zypper install vim -emacs       # Correct sudo zypper install -- -emacs +vim    # Correct sudo zypper remove emacs +vim         # Correct
