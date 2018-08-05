@@ -157,6 +157,8 @@ Header | Comments | Command
 
 #### Installing or Downloading Source Packages [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.softman.sources)
 
+Header | Comments | Command 
+------------ | ------------- | -------------
 | | To install the corresponding source package of a package. When executed as root, the default location to install source packages is /usr/src/packages/ and ~/rpmbuild when run as user. These values can be changed in your local rpm configuration | `zypper source-install PACKAGE_NAME`
 | | The above command will also install the build dependencies of the specified package. If you do not want this, add the switch -D | `sudo zypper source-install -D PACKAGE_NAME`
 | | To install only the build dependencies use -d. Of course, this will only work if you have the repository with the source packages enabled in your repository list (it is added by default, but not enabled). See Section [2.1.5, “Managing Repositories with Zypper”](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.instrepo) for details on repository management | `sudo zypper source-install -d PACKAGE_NAME`
@@ -166,6 +168,8 @@ Header | Comments | Command
 
 #### Installing Packages from Disabled Repositories [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.softman.pluscontent)
 
+Header | Comments | Command 
+------------ | ------------- | -------------
 | |  Normally you can only install or refresh packages from enabled repositories. The --plus-content TAG option helps you specify repositories to be refreshed, temporarily enabled during the current Zypper session, and disabled after it completes.
 
 For example, to enable repositories that may provide additional -debuginfo or -debugsource packages, use --plus-content debug. You can specify this option multiple times.
