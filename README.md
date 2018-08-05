@@ -77,3 +77,12 @@ Questi pacchetti consigliati vengono installati solo se sono effettivamente disp
 >    In other terms, a package may require other packages—if the required packages are not available, the package cannot be installed. 
 >    In addition to dependencies (package requirements) that must be fulfilled, some packages recommend other packages. 
 >    These recommended packages are only installed if they are actually available, otherwise they are ignored and the package recommending them is installed nevertheless. 
+
+
+# Managing Software with Command Line Tools [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#cha.sw_cl)
+
+Questo capito descrie Zypper e RPM, due tool a riga di comando per la gestione del software.
+Per una definizione della terminologia usate in questo contensto (per esemio, repository, patch, o update) fai rierimento a Book “Start-Up”, Chapter 10 “Installing or Removing Software”, Section 10.1 “Definition of Terms”.  
+>    This chapter describes Zypper and RPM, two command line tools for managing software. 
+>    For a definition of the terminology used in this context (for example, repository, patch, or update) refer to Book “Start-Up”, Chapter 10 “Installing or Removing Software”, Section 10.1 “Definition of Terms”. 
+
