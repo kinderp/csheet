@@ -98,7 +98,7 @@ Header | Comments | Command
 ------------ | ------------- | -------------
 Zypper Commands| The simplest way to execute Zypper is to type its name, followed by a command. For example, to apply all needed patches to the system|     `sudo zypper patch`
 Global Options | Additionally, you can choose from one or more global options by typing them immediately before the command. the option --non-interactive means that the command is run without asking anything (automatically applying the default answers).  | `sudo zypper --non-interactive patch`
-Command-Specific Options | To use options that are specific to a particular command, type them immediately after the command. --auto-agree-with-licenses is used to apply all needed patches to a system without you being asked to confirm any licenses. Instead, license will be accepted automatically | s`udo zypper patch --auto-agree-with-licenses`
+Command-Specific Options | To use options that are specific to a particular command, type them immediately after the command. --auto-agree-with-licenses is used to apply all needed patches to a system without you being asked to confirm any licenses. Instead, license will be accepted automatically | `sudo zypper patch --auto-agree-with-licenses`
 Arguments | Some commands require one or more arguments. For example, when using the command install, you need to specify which package or which packages you want to install | `sudo zypper install mplayer`
 Arguments | Some options also require a single argument. The following command will list all known patterns | `zypper search -t pattern`
 
@@ -123,9 +123,9 @@ By Package Name Using Wild Cards | You can select all packages that have names s
 Removing all -debuginfo Packages | When debugging a problem, you sometimes need to temporarily install a lot of -debuginfo packages which give you more information about running processes. After your debugging session finishes and you need to clean the environment, run the following | `sudo zypper remove '*-debuginfo'`
 By Capability | For example, to install a package without knowing its name, capabilities come in handy. The following command will install the package MozillaFirefox | `sudo zypper install firefox`
 By Capability, Hardware Architecture, or Version |  Together with a capability, you can specify a hardware architecture and a version | |
- | The name of the desired hardware architecture is appended to the capability after a full stop. For example, to specify the AMD64/Intel 64 architectures (which in Zypper is named x86_64), use | `sudo zypper install 'firefox.x86_64'`
- | Versions must be appended to the end of the string and must be preceded by an operator: < (lesser than), <= (lesser than or equal), = (equal), >= (greater than or equal), > (greater than).| `sudo zypper install 'firefox>=52.2'`
- | You can also combine a hardware architecture and version requirement | `sudo zypper install 'firefox.x86_64>=52.2'`
+ | | The name of the desired hardware architecture is appended to the capability after a full stop. For example, to specify the AMD64/Intel 64 architectures (which in Zypper is named x86_64), use | `sudo zypper install 'firefox.x86_64'`
+ | | Versions must be appended to the end of the string and must be preceded by an operator: < (lesser than), <= (lesser than or equal), = (equal), >= (greater than or equal), > (greater than).| `sudo zypper install 'firefox>=52.2'`
+| | You can also combine a hardware architecture and version requirement | `sudo zypper install 'firefox.x86_64>=52.2'`
 By Path to the RPM file | You can also specify a local or remote path to a package | `sudo zypper install /tmp/install/MozillaFirefox.rpm` 
 || | `sudo zypper install http://download.example.com/MozillaFirefox.rpm`
 
