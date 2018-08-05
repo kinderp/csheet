@@ -140,3 +140,38 @@ Header | Comments | Command
 | |  | `sudo zypper install vim -emacs `       # Correct 
 | |  | `sudo zypper install -- -emacs +vim`    # Correct 
 | |  | `sudo zypper remove emacs +vim`         # Correct
+
+#### Cleaning Up Dependencies of Removed Packages [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.clean)
+
+Header | Comments | Command 
+------------ | ------------- | -------------
+| | If (together with a certain package), you automatically want to remove any packages that become unneeded after removing the specified package, use the --clean-deps option | `sudo zypper rm PACKAGE_NAME --clean-deps` |
+
+#### Using Zypper in Scripts [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.script)
+
+This option allows the use of Zypper in scripts and cron jobs
+
+Header | Comments | Command 
+------------ | ------------- | -------------
+| | By default, Zypper asks for a confirmation before installing or removing a selected package, or when a problem occurs. You can override this behavior using the --non-interactive option. This option must be given before the actual command (install, remove, and patch), as can be seen in the following | `sudo zypper --non-interactive install PACKAGE_NAME` |
+
+#### Installing or Downloading Source Packages [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.softman.sources)
+
+| | To install the corresponding source package of a package. When executed as root, the default location to install source packages is /usr/src/packages/ and ~/rpmbuild when run as user. These values can be changed in your local rpm configuration | `zypper source-install PACKAGE_NAME`
+| | The above command will also install the build dependencies of the specified package. If you do not want this, add the switch -D | `sudo zypper source-install -D PACKAGE_NAME`
+| | To install only the build dependencies use -d. Of course, this will only work if you have the repository with the source packages enabled in your repository list (it is added by default, but not enabled). See Section [2.1.5, “Managing Repositories with Zypper”](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.instrepo) for details on repository management | `sudo zypper source-install -d PACKAGE_NAME`
+| | A list of all source packages available in your repositories can be obtained with | `zypper search -t srcpackage`
+| | You can also download source packages for all installed packages to a local directory. To download source packages, use the command this command. The default download directory is /var/cache/zypper/source-download. You can change it using the --directory option. To only show missing or extraneous packages without downloading or deleting anything, use the --status option. To delete extraneous source packages, use the --delete option. To disable deleting, use the --no-delete option| `zypper source-download`
+
+
+#### Installing Packages from Disabled Repositories [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.softman.pluscontent)
+
+| |  Normally you can only install or refresh packages from enabled repositories. The --plus-content TAG option helps you specify repositories to be refreshed, temporarily enabled during the current Zypper session, and disabled after it completes.
+
+For example, to enable repositories that may provide additional -debuginfo or -debugsource packages, use --plus-content debug. You can specify this option multiple times.
+
+To temporarily enable such 'debug' repositories to install a specific -debuginfo package, use the option as follows | `sudo zypper --plus-content debug \
+   install "debuginfo(build-id)=eb844a5c20c70a59fc693cd1061f851fb7d046f4"`
+   
+ 
+
