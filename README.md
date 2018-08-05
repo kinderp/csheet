@@ -223,6 +223,8 @@ TODO!
 
 #### Managing Repositories with Zypper [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.instrepo)
 
+eader | Comments | Command 
+------------ | ------------- | -------------
 | | All installation or patch commands of Zypper rely on a list of known repositories. To list all repositories known to the system, use the command | `zypper repos`
 | | By default, details such as the URI or the priority of the repository are not displayed. Use the following command to list all details [1](https://github.com/kinderp/csheet/blob/master/README.md#managing-repositories-with-zypper_1) | `zypper repos -d`
 
