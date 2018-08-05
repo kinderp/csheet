@@ -163,18 +163,15 @@ Header | Comments | Command
 | | The above command will also install the build dependencies of the specified package. If you do not want this, add the switch -D | `sudo zypper source-install -D PACKAGE_NAME`
 | | To install only the build dependencies use -d. Of course, this will only work if you have the repository with the source packages enabled in your repository list (it is added by default, but not enabled). See Section [2.1.5, “Managing Repositories with Zypper”](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.instrepo) for details on repository management | `sudo zypper source-install -d PACKAGE_NAME`
 | | A list of all source packages available in your repositories can be obtained with | `zypper search -t srcpackage`
-| | You can also download source packages for all installed packages to a local directory. To download source packages, use the command this command. The default download directory is /var/cache/zypper/source-download. You can change it using the --directory option. To only show missing or extraneous packages without downloading or deleting anything, use the --status option. To delete extraneous source packages, use the --delete option. To disable deleting, use the --no-delete option| `zypper source-download`
+| | You can also download source packages for all installed packages to a local directory. To download source packages, use the command this command. The default download directory is `/var/cache/zypper/source-download`. You can change it using the `--directory` option. To only show missing or extraneous packages without downloading or deleting anything, use the `--status` option. To delete extraneous source packages, use the `--delete` option. To disable deleting, use the `--no-delete` option| `zypper source-download`
 
 
 #### Installing Packages from Disabled Repositories [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.softman.pluscontent)
 
 Header | Comments | Command 
 ------------ | ------------- | -------------
-| |  Normally you can only install or refresh packages from enabled repositories. The --plus-content TAG option helps you specify repositories to be refreshed, temporarily enabled during the current Zypper session, and disabled after it completes.
-
-For example, to enable repositories that may provide additional -debuginfo or -debugsource packages, use --plus-content debug. You can specify this option multiple times.
-
-To temporarily enable such 'debug' repositories to install a specific -debuginfo package, use the option as follows | `sudo zypper --plus-content debug \
+| | Normally you can only install or refresh packages from enabled repositories. The `--plus-content` TAG option helps you specify repositories to be refreshed, temporarily enabled during the current Zypper session, and disabled after it completes.
+For example, to enable repositories that may provide additional `-debuginfo` or `-debugsource` packages, use `--plus-content debug`. You can specify this option multiple times. To temporarily enable such 'debug' repositories to install a specific `-debuginfo` package, use the option as follows | `sudo zypper --plus-content debug \
    install "debuginfo(build-id)=eb844a5c20c70a59fc693cd1061f851fb7d046f4"`
    
  
