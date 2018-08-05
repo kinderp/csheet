@@ -134,7 +134,7 @@ Header | Comments | Command
 | | To install and remove packages simultaneously, use the +/- modifiers. To install emacs and simultaneously remove vim , use | sudo zypper install emacs -vim
 | | To remove emacs and simultaneously install vim , use | sudo zypper remove emacs +vim
 | | To prevent the package name starting with the - being interpreted as a command option, always use it as the second argument. If this is not possible, precede it with -- | 
-| | sudo zypper install -emacs +vim       # Wrong 
-| | sudo zypper install vim -emacs        # Correct 
-| | sudo zypper install -- -emacs +vim    # Correct 
-| | sudo zypper remove emacs +vim         # Correct
+| |  | sudo zypper install -emacs +vim       # Wrong 
+| |  | sudo zypper install vim -emacs        # Correct 
+| |  | sudo zypper install -- -emacs +vim    # Correct 
+| |  | sudo zypper remove emacs +vim         # Correct
