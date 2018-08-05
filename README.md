@@ -195,3 +195,21 @@ Header | Comments | Command
 | | To install all patches relating to a specific CVE database entry | `sudo zypper patch --cve=NUMBER`
 | ex.| Install a security patch with the CVE number CVE-2010-2713 | `sudo zypper patch --cve=CVE-2010-2713`
 | ex.| To install only patches which affect Zypper and the package management itself.Bear in mind that other command options that would also update other repositories will be dropped if you use the updatestack-only command option.| `sudo zypper patch --updatestack-only`
+
+
+#### Listing Patches [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.softup.listpatch)
+
+TODO!
+
+#### Installing New Package Versions [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.softup.update)
+
+Header | Comments | Command 
+------------ | ------------- | -------------
+| | If a repository contains only new packages, but does not provide patches, zypper patch does not show any effect. To update all installed packages with newer available versions (while maintaining system integrity), use| `sudo zypper update`
+| | To update individual packages, specify the package with either the update or install command | `sudo zypper update PACKAGE_NAME`
+| | | `sudo zypper install PACKAGE_NAME`
+| | A list of all new installable packages can be obtained with the command | `zypper list-updates`
+
+[^1] 
+
+[^1]: Here is the footnote.
