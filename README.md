@@ -184,3 +184,15 @@ Header | Comments | Command
 
 There are three different ways to update software using Zypper: by installing patches, by installing a new version of a package or by updating the entire distribution. The latter is achieved with zypper dist-upgrade. Upgrading openSUSE Leap is discussed in Book “Start-Up”, [Chapter 13 “Upgrading the System and System Changes”](https://doc.opensuse.org/documentation/leap/startup/single-html/book.opensuse.startup/index.html#cha.update.osuse). 
 
+#### Installing All Needed Patches [origin]()
+
+Header | Comments | Command 
+------------ | ------------- | -------------
+| | To install all officially released patches that apply to your system, run.ll patches available from repositories configured on your computer are checked for their relevance to your installation. If they are relevant (and not classified as optional or feature), they are installed immediately.If a patch that is about to be installed includes changes that require a system reboot, you will be warned before.  | `sudo zypper patch`
+| | The plain `zypper patch` command does not apply patches from third party repositories. To update also the third party repositories, use the with-update command option as follows| `sudo zypper patch --with update`
+| | To install also optional patches | `sudo zypper patch --with-optional`
+| | To install all patches relating to a specific Bugzilla issue | `sudo zypper patch --bugzilla=NUMBER`
+| | To install all patches relating to a specific CVE database entry | `sudo zypper patch --cve=NUMBER`
+| ex.| Install a security patch with the CVE number CVE-2010-2713 | `sudo zypper patch --cve=CVE-2010-2713`
+| ex.| To install only patches which affect Zypper and the package management itself.  Bear in mind that other command options that would also update other repositories will be dropped if you use the updatestack-only command option.
+| `sudo zypper patch --updatestack-only`
