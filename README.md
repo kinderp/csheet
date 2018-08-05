@@ -11,7 +11,7 @@ I termini seguenti sono importanti per comprendere l'installazione e la rimozion
 
 #### Repository
 
-Una directory locale o remote contenente pacchetti, più informazioni addizinali circa questi pacchetti (metadati dei pacchetti)
+Una directory locale o remota contenente pacchetti, più informazioni addizionali circa questi pacchetti (metadati dei pacchetti)
 >    A local or remote directory containing packages, plus additional information about these packages (package metadata). 
 
 #### (Repository) Alias/Repository Name
@@ -24,7 +24,7 @@ Esso può essere scelto dall'utente durante l'aggiunta del repository e deve ess
 #### Repository Description Files
 
 Ciascun repository fornisce files descriventi il contenuto del repository (package names, versions, etc.)
-Questi files di descrizione del repository sono scaricati in una cache local che è usata da YaST.
+Questi files di descrizione del repository sono scaricati in una cache locale che è usata da YaST.
 >    Each repository provides files describing content of the repository (package names, versions, etc.). 
 >    These repository description files are downloaded to a local cache that is used by YaST. 
 
@@ -38,7 +38,7 @@ Rappresenta l'intero prodotto, per esempio OpenSUSE Leap.
 Un pattern è un gruppo di pacchetti installabili dedicato ad un certo scopo. 
 Per esempio, il pattern Laptop contiene tutti i pacchetti che sono necessari in un ambiente di elaborazione mobile.
 I pattern definiscono le dipendenze dei pacchetti (ad esempio i pacchetti necessari e raccomandati) e vengono con una preselezione di pacchetti segnati per l'installazione.
-Questo assicura che i pacchetti più importanti necessari per un certo scopo siano disponibili sul tuo sistema dopo l'installazione del pattern
+Questo assicura che i pacchetti più importanti necessari per un certo scopo siano disponibili sul tuo sistema dopo l'installazione del pattern.
 Se è necessario, puoi selezionare e deselezionare pacchetti all'interno del pattern.
 >    A pattern is an installable group of packages dedicated to a certain purpose. 
 >    For example, the Laptop pattern contains all packages that are needed in a mobile computing environment. 
@@ -48,7 +48,7 @@ Se è necessario, puoi selezionare e deselezionare pacchetti all'interno del pat
 
 #### Package
 
-Un pacchetto è un file compresso in formato rpm che contiene i file per un particolare programma
+Un pacchetto è un file compresso in formato rpm che contiene i file per un particolare programma.
 >    A package is a compressed file in rpm format that contains the files for a particular program. 
 
 #### Patch
@@ -69,6 +69,7 @@ Un delta RPM è costituito solo dalla differenza binaria tra due versioni defini
 >    A delta RPM consists only of the binary diff between two defined versions of a package, and therefore has the smallest download size. Before being installed, the full RPM package is rebuilt on the local machine. 
 
 #### Package Dependencies
+
 Alcuni pacchetti dipendono da altri pacchetti, come le librerie condivise. 
 In altri termini, un pacchetto potrebbe richiedere altri pacchetti: se i pacchetti richiesti non sono disponibili, il pacchetto non può essere installato. 
 Oltre alle dipendenze (requisiti del pacchetto) che devono essere soddisfatte, alcuni pacchetti raccomandano altri pacchetti. 
@@ -95,7 +96,7 @@ zypper [--global-options] COMMAND  [--command-options] [arguments]
 
 Header | Comments | Command 
 ------------ | ------------- | -------------
-Zypper Commands| CThe simplest way to execute Zypper is to type its name, followed by a command. For example, to apply all needed patches to the system|     sudo zypper patch
+Zypper Commands| The simplest way to execute Zypper is to type its name, followed by a command. For example, to apply all needed patches to the system|     ```sudo zypper patch```
 Global Options | Additionally, you can choose from one or more global options by typing them immediately before the command. the option --non-interactive means that the command is run without asking anything (automatically applying the default answers).  | sudo zypper --non-interactive patch
 Command-Specific Options | To use options that are specific to a particular command, type them immediately after the command. --auto-agree-with-licenses is used to apply all needed patches to a system without you being asked to confirm any licenses. Instead, license will be accepted automatically | sudo zypper patch --auto-agree-with-licenses
 Arguments | Some commands require one or more arguments. For example, when using the command install, you need to specify which package or which packages you want to install | sudo zypper install mplayer
