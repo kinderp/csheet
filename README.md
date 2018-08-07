@@ -153,7 +153,7 @@ Header | Comments | Command
  
  #### Selecting Which Packages to Install or Remove [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.selectpackage)
  
-There are various ways to address packages with the commands zypper install and zypper remove
+There are various ways to address packages with the commands `zypper install` and `zypper remove`
 
 Header | Comments | Command 
 ------------ | ------------- | -------------
