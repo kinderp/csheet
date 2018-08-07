@@ -314,7 +314,7 @@ Header | Comments | Command
 
 Header | Comments | Command 
 ------------ | ------------- | -------------
-| The zypper search command works on package names, or, optionally, on package summaries and descriptions | Strings wrapped in / are interpreted as regular expressions. By default, the search is not case-sensitive | |
+| The `zypper search` command works on package names, or, optionally, on package summaries and descriptions | Strings wrapped in / are interpreted as regular expressions. By default, the search is not case-sensitive | |
 | | Simple search for a package name containing fire | `zypper search "fire"`|
 | | Simple search for the exact package MozillaFirefox | `zypper search --match-exact "MozillaFirefox"`
 | | Also search in package descriptions and summaries | `zypper search -d fire`
