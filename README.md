@@ -279,7 +279,7 @@ Header | Comments | Command
 #### Searching for Specific Capability [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.query.what-provides)
 
 
-| To search for packages which provide a special capability, use the command `what-provides` | For example, if you want to know which package provides the Perl module SVN::Core, use the following command | `zypper what-provides 'perl(SVN::Core)'`
+| To search for packages which provide a special capability, use the command `what-provides` [1](https://github.com/kinderp/csheet/blob/master/README.md#searching-for-specific-capability_1) | For example, if you want to know which package provides the Perl module SVN::Core, use the following command | `zypper what-provides 'perl(SVN::Core)'`
 
 # Notes
  
