@@ -7,8 +7,8 @@
 
 
 
-* [Zypper Cheat-Sheet]()
-* [Zypper Commands Summury]()
+* [Zypper Cheat-Sheet](https://github.com/kinderp/csheet/blob/master/README.md#zypper-cheat-sheet)
+* [Zypper Commands Summury](https://github.com/kinderp/csheet/blob/master/README.md#zypper-commands-summury-origin)
 * [Definition of Terms](https://github.com/kinderp/csheet/blob/master/README.md#definition-of-terms-origin)
   1. [Repository](https://github.com/kinderp/csheet/blob/master/README.md#repository)
   2. [(Repository) Alias/Repository Name](https://github.com/kinderp/csheet/blob/master/README.md#repository-aliasrepository-name)
@@ -20,27 +20,6 @@
   8. [Resolvable](https://github.com/kinderp/csheet/blob/master/README.md#resolvable)
   9. [Delta RPM](https://github.com/kinderp/csheet/blob/master/README.md#delta-rpm)
   10. [Package Dependencies](https://github.com/kinderp/csheet/blob/master/README.md#package-dependencies)
-
-
-# Zypper Cheat-Sheet
-![zypper-cheat-sheet-1](https://github.com/kinderp/csheet/blob/master/images/Zypper-cheat-sheet-1-1.png "zypper cheat-sheet 1")
-
-![zypper-cheat-sheet-2](https://github.com/kinderp/csheet/blob/master/images/Zypper-cheat-sheet-2-1.png "zypper cheat-sheet 2")
-
-# Zypper Commands Summury [origin](https://en.opensuse.org/SDB:Zypper_usage#Commands)
-
-zypper provides a number of commands which can be grouped into the following categories
-
-Category | list of commands | 
------------- | -------------
-repository management | `refresh`, `repos`, `addrepo`, `removerepo`, `modifyrepo`, `namerepo`, `refresh-services`, `services`, `addservice`, `removeservice`, `modifyservice`
-package management | `install`, `removev`, `source-install`
-update management | `patch`, `list-patches`, `patch-check`, `patches`, `update`, `list-updates`, `dist-upgrade`
-querying | `search`, `info`, `what-provides`, `list-updates`, `patch-check`, `patches`, `packages`, `patterns`, `products`
-locking | `locks`, `addlock`, `removelock`, `cleanlocks`
-utilities | `verify`, `install-new-recommends`
-other | `help`, `licenses`, `versioncmp`, `targetos`
-
 * [Managing Software with Command Line Tools](https://github.com/kinderp/csheet/blob/master/README.md#managing-software-with-command-line-tools-origin)
   * [Zypper](https://github.com/kinderp/csheet/blob/master/README.md#zypper)
     1. [Installing and Removing Software with Zypper](https://github.com/kinderp/csheet/blob/master/README.md#installing-and-removing-software-with-zypper-origin)
@@ -70,7 +49,26 @@ other | `help`, `licenses`, `versioncmp`, `targetos`
     25. [Troubleshooting](https://github.com/kinderp/csheet/blob/master/README.md#troubleshooting-origin)
     26. [Zypper Rollback Feature on Btrfs File System](https://github.com/kinderp/csheet/blob/master/README.md#zypper-rollback-feature-on-btrfs-file-system-origin)
     27. [For More Information](https://github.com/kinderp/csheet/blob/master/README.md#for-more-information-origin)
-    
+
+# Zypper Cheat-Sheet
+![zypper-cheat-sheet-1](https://github.com/kinderp/csheet/blob/master/images/Zypper-cheat-sheet-1-1.png "zypper cheat-sheet 1")
+
+![zypper-cheat-sheet-2](https://github.com/kinderp/csheet/blob/master/images/Zypper-cheat-sheet-2-1.png "zypper cheat-sheet 2")
+
+# Zypper Commands Summury [origin](https://en.opensuse.org/SDB:Zypper_usage#Commands)
+
+zypper provides a number of commands which can be grouped into the following categories
+
+Category | list of commands | 
+------------ | -------------
+repository management | `refresh`, `repos`, `addrepo`, `removerepo`, `modifyrepo`, `namerepo`, `refresh-services`, `services`, `addservice`, `removeservice`, `modifyservice`
+package management | `install`, `removev`, `source-install`
+update management | `patch`, `list-patches`, `patch-check`, `patches`, `update`, `list-updates`, `dist-upgrade`
+querying | `search`, `info`, `what-provides`, `list-updates`, `patch-check`, `patches`, `packages`, `patterns`, `products`
+locking | `locks`, `addlock`, `removelock`, `cleanlocks`
+utilities | `verify`, `install-new-recommends`
+other | `help`, `licenses`, `versioncmp`, `targetos`
+
 ### Definition of Terms [origin](https://doc.opensuse.org/documentation/leap/startup/single-html/book.opensuse.startup/index.html#sec.onlineupdate.terms)
 
 I termini seguenti sono importanti per comprendere l'installazione e la rimozione del software in OpenSUSE LEAP
