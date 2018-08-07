@@ -228,7 +228,7 @@ Header | Comments | Command
 ------------ | ------------- | -------------
 | | Whenever you remove a repository from Zypper or upgrade your system, some packages can get in an “orphaned” state. These orphaned packages belong to no active repository anymore. The following command gives you a list of these. With this list, you can decide if a package is still needed or can be removed safely | `sudo zypper packages --orphaned` |
 
-#### dentifying Processes and Services Using Deleted Files [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.ps)
+#### Identifying Processes and Services Using Deleted Files [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.ps)
 
 TODO!
 
