@@ -64,6 +64,15 @@ Comments |openSUSE | Ubuntu | Fedora | Gentoo | Slackware | Arch |
 | 11 | `rpm -qf` | `dpkg -S` |
 | 12 | `zypper addrepo <repository> <name>`  | adding apt repository in `/etc/apt/sources.list`
 | 13 | `zypper moo` | `apt-get moo` |  
+| 14 | `zypper wp` | `apt-file search` | 
+| 15 | `zypper rm –clean-deps <package>` (only cleans specific package’s dependencies) | `apt-get autoremove` |
+| 16 | `zypper clean` | `apt-get clean` |
+| 17 | `zypper source-install <package>` (also installs build dependencies) | `apt-get source package` |
+| 18 | `zypper –root <location>` – operate on different root | (use chroot) |
+| 19 | `cat /var/log/zypp/history` | `cat /var/log/dpkg.log` |
+| 20 | `zypper addlock/listlocks/removelock` | Apt package locks |
+| 21 | `zypper install-new-recommends` | Installing recommended packages |
+
 
 
 
