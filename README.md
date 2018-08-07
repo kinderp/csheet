@@ -223,7 +223,12 @@ Header | Comments | Command
 
 #### Updating Software with Zypper [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.softup)
 
-There are three different ways to update software using Zypper: by installing patches, by installing a new version of a package or by updating the entire distribution. The latter is achieved with zypper dist-upgrade. Upgrading openSUSE Leap is discussed in Book “Start-Up”, [Chapter 13 “Upgrading the System and System Changes”](https://doc.opensuse.org/documentation/leap/startup/single-html/book.opensuse.startup/index.html#cha.update.osuse). 
+There are three different ways to update software using Zypper: 
+1. by installing patches
+2. by installing a new version of a package 
+3. by updating the entire distribution. 
+
+The latter is achieved with `zypper dist-upgrade`. Upgrading openSUSE Leap is discussed in Book “Start-Up”, [Chapter 13 “Upgrading the System and System Changes”](https://doc.opensuse.org/documentation/leap/startup/single-html/book.opensuse.startup/index.html#cha.update.osuse). 
 
 #### Installing All Needed Patches [origin]()
 
