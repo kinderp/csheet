@@ -2,6 +2,17 @@
 
 # OpenSUSE
 
+* [Definition of Terms](https://github.com/kinderp/csheet/blob/master/README.md#definition-of-terms-origin)
+  1. [Repository](https://github.com/kinderp/csheet/blob/master/README.md#repository)
+  2. [(Repository) Alias/Repository Name](https://github.com/kinderp/csheet/blob/master/README.md#repository-aliasrepository-name)
+  3. [Repository Description Files](https://github.com/kinderp/csheet/blob/master/README.md#repository-description-files)
+  4. [Product](https://github.com/kinderp/csheet/blob/master/README.md#product)
+  5. [Pattern](https://github.com/kinderp/csheet/blob/master/README.md#pattern)
+  6. [Package](https://github.com/kinderp/csheet/blob/master/README.md#package)
+  7. [Patch](https://github.com/kinderp/csheet/blob/master/README.md#patch)
+  8. [Resolvable](https://github.com/kinderp/csheet/blob/master/README.md#resolvable)
+  9. [Delta RPM](https://github.com/kinderp/csheet/blob/master/README.md#delta-rpm)
+  10. [Package Dependencies](https://github.com/kinderp/csheet/blob/master/README.md#package-dependencies)
 
 
 ### Definition of Terms [origin](https://doc.opensuse.org/documentation/leap/startup/single-html/book.opensuse.startup/index.html#sec.onlineupdate.terms)
