@@ -256,10 +256,7 @@ Header | Comments | Command
 Header | Comments | Command 
 ------------ | ------------- | -------------
 Enable or disable repositories with zypper modifyrepo | You can also alter the repository's properties (such as refreshing behavior, name or priority) with this command. The following command will enable the repository named updates, turn on auto-refresh and set its priority to 20 | `sudo zypper modifyrepo -er -p 20 'updates'`
-| Modifying repositories is not limited to a single repository—you can also operate on groups | ```-a: all repositories
--l: local repositories
--t: remote repositories
--m TYPE: repositories of a certain type (where TYPE can be one of the following: http, https, ftp, cd, dvd, dir, file, cifs, smb, nfs, hd, iso) ``` | 
+| Modifying repositories is not limited to a single repository—you can also operate on groups | ```-a: all repositories -l: local repositories -t: remote repositories -m TYPE: repositories of a certain type (where TYPE can be one of the following: http, https, ftp, cd, dvd, dir, file, cifs, smb, nfs, hd, iso) ``` | | 
 # Notes
  
  
