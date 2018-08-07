@@ -1,6 +1,10 @@
-# csheet
+
 
 # OpenSUSE
+
+![zypper-cheat-sheet-1](https://github.com/kinderp/csheet/blob/master/images/Zypper-cheat-sheet-1-1.png "zypper cheat-sheet 1")
+
+![zypper-cheat-sheet-2](https://github.com/kinderp/csheet/blob/master/images/Zypper-cheat-sheet-2-1.png "zypper cheat-sheet 2")
 
 * [Definition of Terms](https://github.com/kinderp/csheet/blob/master/README.md#definition-of-terms-origin)
   1. [Repository](https://github.com/kinderp/csheet/blob/master/README.md#repository)
