@@ -2,11 +2,7 @@
 
 # OpenSUSE
 
-
-
-
-
-
+* [Package Management](https://en.opensuse.org/Package_management)
 * [Zypper Cheat-Sheet](https://github.com/kinderp/csheet/blob/master/README.md#zypper-cheat-sheet)
 * [Zypper Commands Summury](https://github.com/kinderp/csheet/blob/master/README.md#zypper-commands-summury-origin)
 * [Definition of Terms](https://github.com/kinderp/csheet/blob/master/README.md#definition-of-terms-origin)
