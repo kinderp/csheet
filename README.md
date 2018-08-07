@@ -2,9 +2,28 @@
 
 # OpenSUSE
 
+# Zypper Cheat-Sheet
 ![zypper-cheat-sheet-1](https://github.com/kinderp/csheet/blob/master/images/Zypper-cheat-sheet-1-1.png "zypper cheat-sheet 1")
 
 ![zypper-cheat-sheet-2](https://github.com/kinderp/csheet/blob/master/images/Zypper-cheat-sheet-2-1.png "zypper cheat-sheet 2")
+
+# Zypper Commands Summury [origin](https://en.opensuse.org/SDB:Zypper_usage#Commands)
+
+zypper provides a number of commands which can be grouped into the following categories
+
+Category | list of commands | 
+------------ | -------------
+repository management | `refresh`, `repos`, `addrepo`, `removerepo`, `modifyrepo`, `namerepo`, `refresh-services`, `services`, `addservice`, `removeservice`, `modifyservice`
+package management | `install`, `removev`, `source-install`
+update management | `patch`, `list-patches`, `patch-check`, `patches`, `update`, `list-updates`, `dist-upgrade`
+querying | `search`, `info`, `what-provides`, `list-updates`, `patch-check`, `patches`, `packages`, `patterns`, `products`
+locking | `locks`, `addlock`, `removelock`, `cleanlocks`
+utilities | `verify`, `install-new-recommends`
+other | `help`, `licenses`, `versioncmp`, `targetos`
+
+
+
+
 
 * [Definition of Terms](https://github.com/kinderp/csheet/blob/master/README.md#definition-of-terms-origin)
   1. [Repository](https://github.com/kinderp/csheet/blob/master/README.md#repository)
