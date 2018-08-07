@@ -51,13 +51,13 @@
 
 Comments |openSUSE | Ubuntu | Fedora | Gentoo | Slackware | Arch | 
 ------------ | -------------| -------------| -------------| -------------| -------------| -------------
-| 1 | `zypper refresh` | `apt-get update` |
-| 2 | `zypper update` | `apt-get -u upgrade` |
-| 3 | `zypper dist-upgrade` | `apt-get -u dist-upgrade` |
-| 4 | `zypper install amarok` | `apt-get install amarok` |
-| 5 | `zypper remove amarok` | `apt-get remove amarok` |
-| 6 | `zypper search amarok` | `apt-cache search amarok` |
-| 7 | `zypper info amarok` | `apt-cache showpkg amarok` |
+| 1 | `zypper refresh` | `apt-get update` | `yum makecache` | 
+| 2 | `zypper update` | `apt-get -u upgrade` | `yum update` |
+| 3 | `zypper dist-upgrade` | `apt-get -u dist-upgrade` |  |
+| 4 | `zypper install amarok` | `apt-get install amarok` | `yum install amarok` |
+| 5 | `zypper remove amarok` | `apt-get remove amarok` | `yum remove amarok` |
+| 6 | `zypper search amarok` | `apt-cache search amarok` | `yum search amarok` |
+| 7 | `zypper info amarok` | `apt-cache showpkg amarok` | `yum info amarok` |
 | 8 | `rpm -qa` | `dpkg -l` |
 | 9 | `rpm -ql` | `dpkg -L` |
 | 10 | `rpm -qi` | `dpkg -s` |
@@ -66,7 +66,7 @@ Comments |openSUSE | Ubuntu | Fedora | Gentoo | Slackware | Arch |
 | 13 | `zypper moo` | `apt-get moo` |  
 | 14 | `zypper wp` | `apt-file search` | 
 | 15 | `zypper rm –clean-deps <package>` (only cleans specific package’s dependencies) | `apt-get autoremove` |
-| 16 | `zypper clean` | `apt-get clean` |
+| 16 | `zypper clean` | `apt-get clean` | `yum clean all` |
 | 17 | `zypper source-install <package>` (also installs build dependencies) | `apt-get source package` |
 | 18 | `zypper –root <location>` – operate on different root | (use chroot) |
 | 19 | `cat /var/log/zypp/history` | `cat /var/log/dpkg.log` |
