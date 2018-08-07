@@ -96,7 +96,7 @@ zypper [--global-options] COMMAND  [--command-options] [arguments]
 
 Header | Comments | Command 
 ------------ | ------------- | -------------
-Zypper Commands| The simplest way to execute Zypper is to type its name, followed by a command. For example, to apply all needed patches to the system|     `sudo zypper patch`
+Zypper Commands| The simplest way to execute Zypper is to type its name, followed by a command. For example, to apply all needed patches to the system | `sudo zypper patch`
 Global Options | Additionally, you can choose from one or more global options by typing them immediately before the command. the option `--non-interactive` means that the command is run without asking anything (automatically applying the default answers).  | `sudo zypper --non-interactive patch`
 Command-Specific Options | To use options that are specific to a particular command, type them immediately after the command. `--auto-agree-with-licenses` is used to apply all needed patches to a system without you being asked to confirm any licenses. Instead, license will be accepted automatically | `sudo zypper patch --auto-agree-with-licenses`
 Arguments | Some commands require one or more arguments. For example, when using the command install, you need to specify which package or which packages you want to install | `sudo zypper install mplayer`
@@ -223,12 +223,43 @@ TODO!
 
 #### Managing Repositories with Zypper [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.instrepo)
 
-eader | Comments | Command 
+Header | Comments | Command 
 ------------ | ------------- | -------------
 | | All installation or patch commands of Zypper rely on a list of known repositories. To list all repositories known to the system, use the command | `zypper repos`
 | | By default, details such as the URI or the priority of the repository are not displayed. Use the following command to list all details [1](https://github.com/kinderp/csheet/blob/master/README.md#managing-repositories-with-zypper_1) | `zypper repos -d`
 
+#### Adding Repositories [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.instrepo.add)
 
+
+Header | Comments | Command 
+------------ | ------------- | -------------
+| To add a repository |  URI can either be an Internet repository, a network resource, a directory or a CD or DVD (see [this](http://en.opensuse.org/openSUSE:Libzypp_URIs) for details). The ALIAS is a shorthand and unique identifier of the repository. You can freely choose it, with the only exception that it needs to be unique. Zypper will issue a warning if you specify an alias that is already in use.
+ | `sudo zypper addrepo URI ALIAS`
+ 
+ #### Refreshing Repositories [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.instrepo.refresh)
+ 
+ Header | Comments | Command 
+------------ | ------------- | -------------
+ |  | zypper enables you to fetch changes in packages from configured repositories. To fetch the changes, run | `sudo zypper refresh` |
+ |  | The refresh command enables you to view changes also in disabled repositories, by using the `--plus-content` option. This option fetches changes in repositories, but keeps the disabled repositories in the same state—disabled | `sudo zypper --plus-content refresh`
+ 
+ ##### Removing Repositories [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.instrepo.rm)
+ 
+ Header | Comments | Command 
+------------ | ------------- | -------------
+ | | To remove a repository from the list, use the command zypper removerepo together with the alias or number of the repository you want to delete. For example, to remove the repository Leap-42.3-NOSS from Example 2.1, [“Zypper—List of Known Repositories”](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#ex.zypper.repos), use one of the following commands | `sudo zypper removerepo 4` |
+ | | | `sudo zypper removerepo "Leap-42.3-NOSS"`|
+ 
+
+#### Modifying Repositories [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.instrepo.mofify)
+
+Header | Comments | Command 
+------------ | ------------- | -------------
+Enable or disable repositories with zypper modifyrepo | You can also alter the repository's properties (such as refreshing behavior, name or priority) with this command. The following command will enable the repository named updates, turn on auto-refresh and set its priority to 20 | `sudo zypper modifyrepo -er -p 20 'updates'`
+| Modifying repositories is not limited to a single repository—you can also operate on groups | ```-a: all repositories
+-l: local repositories
+-t: remote repositories
+-m TYPE: repositories of a certain type (where TYPE can be one of the following: http, https, ftp, cd, dvd, dir, file, cifs, smb, nfs, hd, iso) ``` | 
 # Notes
  
  
