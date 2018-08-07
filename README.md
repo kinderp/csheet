@@ -51,12 +51,12 @@
 
 Comments |openSUSE | Ubuntu | Fedora | Gentoo | Slackware | Arch | 
 ------------ | -------------| -------------| -------------| -------------| -------------| -------------
-| 1 | `zypper refresh` | `apt-get update` | `yum makecache` | 
+| 1 | `zypper refresh` | `apt-get update` | `yum makecache` | `emerge –sync` |
 | 2 | `zypper update` | `apt-get -u upgrade` | `yum update` |
-| 3 | `zypper dist-upgrade` | `apt-get -u dist-upgrade` |  |
-| 4 | `zypper install amarok` | `apt-get install amarok` | `yum install amarok` |
-| 5 | `zypper remove amarok` | `apt-get remove amarok` | `yum remove amarok` |
-| 6 | `zypper search amarok` | `apt-cache search amarok` | `yum search amarok` |
+| 3 | `zypper dist-upgrade` | `apt-get -u dist-upgrade` |  | `emerge –newuse –deep –update world` |
+| 4 | `zypper install amarok` | `apt-get install amarok` | `yum install amarok` | `emerge amarok` |
+| 5 | `zypper remove amarok` | `apt-get remove amarok` | `yum remove amarok` | `emerge –unmerge amarok` |
+| 6 | `zypper search amarok` | `apt-cache search amarok` | `yum search amarok` | `emerge –search amarok` |
 | 7 | `zypper info amarok` | `apt-cache showpkg amarok` | `yum info amarok` |
 | 8 | `rpm -qa` | `dpkg -l` |
 | 9 | `rpm -ql` | `dpkg -L` |
