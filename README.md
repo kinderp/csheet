@@ -3,6 +3,7 @@
 # OpenSUSE
 
 * [Package Management](https://en.opensuse.org/Package_management)
+* [Package Management Distro Comparison]()
 * [Zypper Cheat-Sheet](https://github.com/kinderp/csheet/blob/master/README.md#zypper-cheat-sheet)
 * [Zypper Commands Summury](https://github.com/kinderp/csheet/blob/master/README.md#zypper-commands-summury-origin)
 * [Definition of Terms](https://github.com/kinderp/csheet/blob/master/README.md#definition-of-terms-origin)
@@ -45,6 +46,26 @@
     25. [Troubleshooting](https://github.com/kinderp/csheet/blob/master/README.md#troubleshooting-origin)
     26. [Zypper Rollback Feature on Btrfs File System](https://github.com/kinderp/csheet/blob/master/README.md#zypper-rollback-feature-on-btrfs-file-system-origin)
     27. [For More Information](https://github.com/kinderp/csheet/blob/master/README.md#for-more-information-origin)
+
+# Package Management Distro Comparison [origin](https://news.opensuse.org/2013/03/22/opensuse-for-new-geekos/)
+
+Comments |openSUSE | Ubuntu | Fedora | Gentoo | Slackware | Arch | 
+------------ | -------------| -------------| -------------| -------------| -------------| -------------
+| 1 | `zypper refresh` | `apt-get update` |
+| 2 | `zypper update` | `apt-get -u upgrade` |
+| 3 | `zypper dist-upgrade` | `apt-get -u dist-upgrade` |
+| 4 | `zypper install amarok` | `apt-get install amarok` |
+| 5 | `zypper remove amarok` | `apt-get remove amarok` |
+| 6 | `zypper search amarok` | `apt-cache search amarok` |
+| 7 | `zypper info amarok` | `apt-cache showpkg amarok` |
+| 8 | `rpm -qa` | `dpkg -l` |
+| 9 | `rpm -ql` | `dpkg -L` |
+| 10 | `rpm -qi` | `dpkg -s` |
+| 11 | `rpm -qf` | `dpkg -S` |
+| 12 | `zypper addrepo <repository> <name>`  | adding apt repository in `/etc/apt/sources.list`
+| 13 | `zypper moo` | `apt-get moo` |  
+
+
 
 # Zypper Cheat-Sheet
 ![zypper-cheat-sheet-1](https://github.com/kinderp/csheet/blob/master/images/Zypper-cheat-sheet-1-1.png "zypper cheat-sheet 1")
