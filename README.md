@@ -357,7 +357,7 @@ If the Btrfs file system is used on the root partition and snapper is installed,
 
 #### For More Information [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.more)
 
-For more information on managing software from the command line, enter zypper help, zypper help  COMMAND or refer to the zypper(8) man page. For a complete and detailed command reference, cheat sheets with the most important commands, and information on how to use Zypper in scripts and applications, refer to [link](http://en.opensuse.org/SDB:Zypper_usage). A list of software changes for the latest openSUSE Leap version can be found at [link](http://en.opensuse.org/openSUSE:Zypper) versions.
+For more information on managing software from the command line, enter `zypper help`, `zypper help  COMMAND` or refer to the zypper(8) man page. For a complete and detailed command reference, cheat sheets with the most important commands, and information on how to use Zypper in scripts and applications, refer to [link](http://en.opensuse.org/SDB:Zypper_usage). A list of software changes for the latest openSUSE Leap version can be found at [link](http://en.opensuse.org/openSUSE:Zypper) versions.
 
 # Notes
 
