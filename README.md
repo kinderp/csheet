@@ -306,6 +306,6 @@ zypper repos
 ```
 When specifying repositories in various commands, an alias, URI or repository number from the zypper repos command output can be used. A repository alias is a short version of the repository name for use in repository handling commands. Note that the repository numbers can change after modifying the list of repositories. The alias will never change by itself
 
-###### Searching -or-Specific-Capability_1
+###### Searching-for-Specific-Capability_1
 
 The what-provides PACKAGE_NAME is similar to rpm -q --whatprovides PACKAGE_NAME, but RPM is only able to query the RPM database (that is the database of all installed packages). Zypper, on the other hand, will tell you about providers of the capability from any repository, not only those that are installed
