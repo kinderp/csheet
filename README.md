@@ -265,6 +265,22 @@ Header | Comments | Command
 ------------ | ------------- | -------------
 | Zypper offers various methods to query repositories or packages. To get lists of all products, patterns, packages or patches available, use the following commands | To query all repositories for certain packages, use `search`. To get information regarding particular packages, use the `info` command | `zypper products` `zypper patterns` `zypper packages` `zypper patches`
 
+#### Searching for Software [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.query.search)
+
+Header | Comments | Command 
+------------ | ------------- | -------------
+| The zypper search command works on package names, or, optionally, on package summaries and descriptions | Strings wrapped in / are interpreted as regular expressions. By default, the search is not case-sensitive | |
+| | Simple search for a package name containing fire | `zypper search "fire"`|
+| | Simple search for the exact package MozillaFirefox | `zypper search --match-exact "MozillaFirefox"`
+| | Also search in package descriptions and summaries | `zypper search -d fire`
+| | Only display packages not already installed | `zypper search -u fire`
+| | Display packages containing the string fir not followed be e | `zypper se "/fir[^e]/"`
+
+#### Searching for Specific Capability [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.query.what-provides)
+
+
+| To search for packages which provide a special capability, use the command `what-provides` | For example, if you want to know which package provides the Perl module SVN::Core, use the following command | `zypper what-provides 'perl(SVN::Core)'`
+
 # Notes
  
  
@@ -289,3 +305,7 @@ zypper repos
 [...]
 ```
 When specifying repositories in various commands, an alias, URI or repository number from the zypper repos command output can be used. A repository alias is a short version of the repository name for use in repository handling commands. Note that the repository numbers can change after modifying the list of repositories. The alias will never change by itself
+
+###### Searching -or-Specific-Capability_1
+
+The what-provides PACKAGE_NAME is similar to rpm -q --whatprovides PACKAGE_NAME, but RPM is only able to query the RPM database (that is the database of all installed packages). Zypper, on the other hand, will tell you about providers of the capability from any repository, not only those that are installed
