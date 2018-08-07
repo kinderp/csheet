@@ -255,7 +255,7 @@ Header | Comments | Command
 | | To update individual packages, specify the package with either the update or install command | `sudo zypper update PACKAGE_NAME`
 | | | `sudo zypper install PACKAGE_NAME`
 | | A list of all new installable packages can be obtained with the command [1](https://github.com/kinderp/csheet/blob/master/README.md#installing-new-package-versions_1) | `zypper list-updates`
-| | A list of all new available packages (regardless whether installable or not) can be obtained with. To find out why a new package cannot be installed, use the zypper install or zypper update command.| `sudo zypper list-updates --all`
+| | A list of all new available packages (regardless whether installable or not) can be obtained with. To find out why a new package cannot be installed, use the `zypper install` or `zypper update` command.| `sudo zypper list-updates --all`
 
 #### Identifying Orphaned Packages [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.softup.orphaned)
 
