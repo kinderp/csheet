@@ -2,7 +2,7 @@
 
 # OpenSUSE
 
-## Yast
+
 
 ### Definition of Terms [origin](https://doc.opensuse.org/documentation/leap/startup/single-html/book.opensuse.startup/index.html#sec.onlineupdate.terms)
 
