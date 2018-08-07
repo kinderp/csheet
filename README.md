@@ -186,7 +186,7 @@ Header | Comments | Command
 
 Header | Comments | Command 
 ------------ | ------------- | -------------
-| | If (together with a certain package), you automatically want to remove any packages that become unneeded after removing the specified package, use the --clean-deps option | `sudo zypper rm PACKAGE_NAME --clean-deps` |
+| | If (together with a certain package), you automatically want to remove any packages that become unneeded after removing the specified package, use the `--clean-deps` option | `sudo zypper rm PACKAGE_NAME --clean-deps` |
 
 #### Using Zypper in Scripts [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.script)
 
@@ -194,7 +194,7 @@ This option allows the use of Zypper in scripts and cron jobs
 
 Header | Comments | Command 
 ------------ | ------------- | -------------
-| | By default, Zypper asks for a confirmation before installing or removing a selected package, or when a problem occurs. You can override this behavior using the --non-interactive option. This option must be given before the actual command (install, remove, and patch), as can be seen in the following | `sudo zypper --non-interactive install PACKAGE_NAME` |
+| | By default, Zypper asks for a confirmation before installing or removing a selected package, or when a problem occurs. You can override this behavior using the `--non-interactive` option. This option must be given before the actual command (install, remove, and patch), as can be seen in the following | `sudo zypper --non-interactive install PACKAGE_NAME` |
 
 #### Installing or Downloading Source Packages [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.softman.sources)
 
