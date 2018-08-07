@@ -290,7 +290,27 @@ Header | Comments | Command
 | To query single packages, use `info` with an exact package name as an argument. This displays detailed information about a package. | In case the package name does not match any package name from repositories, the command outputs detailed information for non-package matches. If you request a specific type (by using the -t option) and the type does not exist, the command outputs other available matches but without detailed information. If you specify a source package, the command displays binary packages built from the source package. If you specify a binary package, the command outputs the source packages used to build the binary package. To also show what is required/recommended by the package, use the options `--requires` and `--recommends` | `zypper info --requires MozillaFirefox`
 # Notes
  
- 
+#### Configuring Zypper [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.configure)
+
+Zypper now comes with a configuration file, allowing you to permanently change Zypper's behavior (either system-wide or user-specific)
+
+Header | Comments | Command 
+------------ | ------------- | -------------
+For system-wide changes, edit | | `/etc/zypp/zypper.conf` |
+For user-specific changes, edit | If `~/.zypper.conf` does not yet exist, you can use `/etc/zypp/zypper.conf` as a template: copy it to `~/.zypper.conf` and adjust it to your liking. Refer to the comments in the file for help about the available options.| `~/.zypper.conf` |
+
+#### Troubleshooting [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.trouble)
+
+Header | Comments | Command 
+------------ | ------------- | -------------
+| Refreshing the repositories | If you have trouble accessing packages from configured repositories (for example, Zypper cannot find a certain package even though you know it exists in one the repositories), refreshing the repositories may help | `sudo zypper refresh`
+| Complete refresh and rebuild of the database | If that does not help, try to force a complete refresh and rebuild of the database, including a forced download of raw metadata. This forces a complete refresh and rebuild of the database, including a forced download of raw metadata. | `sudo zypper refresh -fdb`
+
+
+#### Zypper Rollback Feature on Btrfs File System [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.rollback)
+
+If the Btrfs file system is used on the root partition and snapper is installed, Zypper automatically calls snapper when committing changes to the file system to create appropriate file system snapshots. These snapshots can be used to revert any changes made by Zypper. See Chapter 3, [System Recovery and Snapshot Management with Snapper](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#cha.snapper) for more information. 
+
 ###### Installing-New-Package-Versions_1
  
  Note that this command only lists packages that match the following criteria
