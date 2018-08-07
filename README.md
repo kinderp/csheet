@@ -148,8 +148,8 @@ Arguments | Some options also require a single argument. The following command w
 
 Header | Comments | Command 
 ------------ | ------------- | -------------
-| | To install | `sudo zypper install PACKAGE_NAME`
-| | To remove | `sudo zypper remove PACKAGE_NAME`
+| To install |  | `sudo zypper install PACKAGE_NAME`
+| To remove  |  | `sudo zypper remove PACKAGE_NAME`
  
  #### Selecting Which Packages to Install or Remove [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.selectpackage)
  
