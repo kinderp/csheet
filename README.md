@@ -278,9 +278,16 @@ Header | Comments | Command
 
 #### Searching for Specific Capability [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.query.what-provides)
 
-
+Header | Comments | Command 
+------------ | ------------- | -------------
 | To search for packages which provide a special capability, use the command `what-provides` [1](https://github.com/kinderp/csheet/blob/master/README.md#searching-for-specific-capability_1) | For example, if you want to know which package provides the Perl module SVN::Core, use the following command | `zypper what-provides 'perl(SVN::Core)'`
 
+
+#### Showing Package Information [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.query.info)
+
+Header | Comments | Command 
+------------ | ------------- | -------------
+| To query single packages, use `info` with an exact package name as an argument. This displays detailed information about a package. | In case the package name does not match any package name from repositories, the command outputs detailed information for non-package matches. If you request a specific type (by using the -t option) and the type does not exist, the command outputs other available matches but without detailed information. If you specify a source package, the command displays binary packages built from the source package. If you specify a binary package, the command outputs the source packages used to build the binary package. To also show what is required/recommended by the package, use the options `--requires` and `--recommends` | `zypper info --requires MozillaFirefox`
 # Notes
  
  
