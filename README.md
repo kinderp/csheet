@@ -2,6 +2,26 @@
 
 # OpenSUSE
 
+
+
+
+
+
+* [Zypper Cheat-Sheet]()
+* [Zypper Commands Summury]()
+* [Definition of Terms](https://github.com/kinderp/csheet/blob/master/README.md#definition-of-terms-origin)
+  1. [Repository](https://github.com/kinderp/csheet/blob/master/README.md#repository)
+  2. [(Repository) Alias/Repository Name](https://github.com/kinderp/csheet/blob/master/README.md#repository-aliasrepository-name)
+  3. [Repository Description Files](https://github.com/kinderp/csheet/blob/master/README.md#repository-description-files)
+  4. [Product](https://github.com/kinderp/csheet/blob/master/README.md#product)
+  5. [Pattern](https://github.com/kinderp/csheet/blob/master/README.md#pattern)
+  6. [Package](https://github.com/kinderp/csheet/blob/master/README.md#package)
+  7. [Patch](https://github.com/kinderp/csheet/blob/master/README.md#patch)
+  8. [Resolvable](https://github.com/kinderp/csheet/blob/master/README.md#resolvable)
+  9. [Delta RPM](https://github.com/kinderp/csheet/blob/master/README.md#delta-rpm)
+  10. [Package Dependencies](https://github.com/kinderp/csheet/blob/master/README.md#package-dependencies)
+
+
 # Zypper Cheat-Sheet
 ![zypper-cheat-sheet-1](https://github.com/kinderp/csheet/blob/master/images/Zypper-cheat-sheet-1-1.png "zypper cheat-sheet 1")
 
@@ -20,23 +40,6 @@ querying | `search`, `info`, `what-provides`, `list-updates`, `patch-check`, `pa
 locking | `locks`, `addlock`, `removelock`, `cleanlocks`
 utilities | `verify`, `install-new-recommends`
 other | `help`, `licenses`, `versioncmp`, `targetos`
-
-
-
-
-
-* [Definition of Terms](https://github.com/kinderp/csheet/blob/master/README.md#definition-of-terms-origin)
-  1. [Repository](https://github.com/kinderp/csheet/blob/master/README.md#repository)
-  2. [(Repository) Alias/Repository Name](https://github.com/kinderp/csheet/blob/master/README.md#repository-aliasrepository-name)
-  3. [Repository Description Files](https://github.com/kinderp/csheet/blob/master/README.md#repository-description-files)
-  4. [Product](https://github.com/kinderp/csheet/blob/master/README.md#product)
-  5. [Pattern](https://github.com/kinderp/csheet/blob/master/README.md#pattern)
-  6. [Package](https://github.com/kinderp/csheet/blob/master/README.md#package)
-  7. [Patch](https://github.com/kinderp/csheet/blob/master/README.md#patch)
-  8. [Resolvable](https://github.com/kinderp/csheet/blob/master/README.md#resolvable)
-  9. [Delta RPM](https://github.com/kinderp/csheet/blob/master/README.md#delta-rpm)
-  10. [Package Dependencies](https://github.com/kinderp/csheet/blob/master/README.md#package-dependencies)
-
 
 * [Managing Software with Command Line Tools](https://github.com/kinderp/csheet/blob/master/README.md#managing-software-with-command-line-tools-origin)
   * [Zypper](https://github.com/kinderp/csheet/blob/master/README.md#zypper)
