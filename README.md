@@ -288,7 +288,6 @@ Header | Comments | Command
 Header | Comments | Command 
 ------------ | ------------- | -------------
 | To query single packages, use `info` with an exact package name as an argument. This displays detailed information about a package. | In case the package name does not match any package name from repositories, the command outputs detailed information for non-package matches. If you request a specific type (by using the -t option) and the type does not exist, the command outputs other available matches but without detailed information. If you specify a source package, the command displays binary packages built from the source package. If you specify a binary package, the command outputs the source packages used to build the binary package. To also show what is required/recommended by the package, use the options `--requires` and `--recommends` | `zypper info --requires MozillaFirefox`
-# Notes
  
 #### Configuring Zypper [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.configure)
 
@@ -310,6 +309,12 @@ Header | Comments | Command
 #### Zypper Rollback Feature on Btrfs File System [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.rollback)
 
 If the Btrfs file system is used on the root partition and snapper is installed, Zypper automatically calls snapper when committing changes to the file system to create appropriate file system snapshots. These snapshots can be used to revert any changes made by Zypper. See Chapter 3, [System Recovery and Snapshot Management with Snapper](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#cha.snapper) for more information. 
+
+#### For More Information [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.more)
+
+For more information on managing software from the command line, enter zypper help, zypper help  COMMAND or refer to the zypper(8) man page. For a complete and detailed command reference, cheat sheets with the most important commands, and information on how to use Zypper in scripts and applications, refer to [link](http://en.opensuse.org/SDB:Zypper_usage). A list of software changes for the latest openSUSE Leap version can be found at []link(http://en.opensuse.org/openSUSE:Zypper) versions.
+
+# Notes
 
 ###### Installing-New-Package-Versions_1
  
