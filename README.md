@@ -256,11 +256,13 @@ Header | Comments | Command
 Header | Comments | Command 
 ------------ | ------------- | -------------
 Enable or disable repositories with zypper modifyrepo | You can also alter the repository's properties (such as refreshing behavior, name or priority) with this command. The following command will enable the repository named updates, turn on auto-refresh and set its priority to 20 | `sudo zypper modifyrepo -er -p 20 'updates'`
-| Modifying repositories is not limited to a single repository—you can also operate on groups | ```-a: all repositories -l: local repositories -t: remote repositories -m TYPE: repositories of a certain type (where TYPE can be one of the following: http, https, ftp, cd, dvd, dir, file, cifs, smb, nfs, hd, iso) ``` | | 
+| Modifying repositories is not limited to a single repository—you can also operate on groups | `-a: all repositories` `-l: local repositories` `-t: remote repositories` `-m TYPE: repositories of a certain type (where TYPE can be one of the following: http, https, ftp, cd, dvd, dir, file, cifs, smb, nfs, hd, iso) ` | | 
 | To rename a repository alias, use the `renamerepo` command | The following example changes the alias from Mozilla Firefox to firefox | `sudo zypper renamerepo 'Mozilla Firefox' firefox`
 
 #### Querying Repositories and Packages with Zypper [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.query)
 
+Header | Comments | Command 
+------------ | ------------- | -------------
 | Zypper offers various methods to query repositories or packages. To get lists of all products, patterns, packages or patches available, use the following commands | To query all repositories for certain packages, use `search`. To get information regarding particular packages, use the `info` command | `zypper products` `zypper patterns` `zypper packages` `zypper patches`
 
 # Notes
