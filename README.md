@@ -279,8 +279,7 @@ Header | Comments | Command
 
 Header | Comments | Command 
 ------------ | ------------- | -------------
-| To add a repository |  URI can either be an Internet repository, a network resource, a directory or a CD or DVD (see [this](http://en.opensuse.org/openSUSE:Libzypp_URIs) for details). The ALIAS is a shorthand and unique identifier of the repository. You can freely choose it, with the only exception that it needs to be unique. Zypper will issue a warning if you specify an alias that is already in use.
- | `sudo zypper addrepo URI ALIAS`
+| To add a repository |  URI can either be an Internet repository, a network resource, a directory or a CD or DVD (see [this](http://en.opensuse.org/openSUSE:Libzypp_URIs) for details). The ALIAS is a shorthand and unique identifier of the repository. You can freely choose it, with the only exception that it needs to be unique. Zypper will issue a warning if you specify an alias that is already in use. | `sudo zypper addrepo URI ALIAS` |
  
  #### Refreshing Repositories [origin](https://doc.opensuse.org/documentation/leap/reference/single-html/book.opensuse.reference/index.html#sec.zypper.instrepo.refresh)
  
